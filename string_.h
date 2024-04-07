@@ -82,6 +82,8 @@ char* copyIfReverse(char *rbeginSource, const char *rendSource, char *beginDesti
         }
         rbeginSource--;
     }
+   beginDestination[*(rbeginSource - 1)] = '\0';
+
     return beginDestination;
 }
 
